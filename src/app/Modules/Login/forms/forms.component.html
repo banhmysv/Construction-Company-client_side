@@ -1,0 +1,109 @@
+<!-- Classic Breadcrumbs-->
+<section class="breadcrumb-classic">
+  <div class="rd-parallax">
+    <div class="rd-parallax-layer" data-speed="0.25" data-type="media" data-url="assets/images/breadcrumbs-parallax.jpg"></div>
+    <div class="rd-parallax-layer section-top-75 section-md-top-150 section-lg-top-260" data-speed="0" data-type="html">
+      <div class="shell container">
+        <ul class="list-breadcrumb">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="#">Elements</a>
+          </li>
+          <li>Forms
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-50 section-md-75 section-md-100 section-lg-120 section-xl-top-150">
+  <div class="shell container">
+    <h1>Forms</h1>
+    <div class="row offset-top-40">
+      <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-8 text-left">
+        <h2>Login form</h2>
+        <form [formGroup]="formLogin" class="rd-mailform text-left" data-form-output="form-output-global" data-form-type="contact"
+          method="post" action="bat/rd-mailform.php">
+          <div class="form-group postfix-xl-right-40">
+            <label class="form-label" for="contact-name-login">Username or E-mail *</label>
+            <input class="form-control" formControlName="username" id="contact-name-login" type="text" name="name" data-constraints="@Required">
+          </div>
+          <div class="form-group postfix-xl-right-40">
+            <label class="form-label" for="contact-phone-login">Password *</label>
+            <input class="form-control" formControlName="password" id="contact-phone-login" type="password" name="password" data-constraints="@Required">
+          </div>
+          <button class="btn btn-primary offset-top-35" (click)="loginSystem(formLogin.value)">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-50 section-md-75 section-md-100 section-lg-120 section-xl-150 bg-wild-sand">
+  <div class="shell container text-left">
+    <h2>
+      <span class="small">contact us</span>If you have any questions, just fill in the contact form, and we will answer you shortly.</h2>
+    <form [formGroup]="formContact" class="rd-mailform text-left" data-form-output="form-output-global" data-form-type="contact"
+      method="post" action="bat/rd-mailform.php" novalidate="novalidate">
+      <div class="row offset-top-40 offset-md-top-60 ">
+        <div class="col-xl-4 col-lg-6 ">
+          <div class="form-group postfix-xl-right-40">
+            <label class="form-label rd-input-label" for="contact-name">Name *</label>
+            <input class="form-control form-control-has-validation form-control-last-child" formControlName="name" id="contact-name"
+              type="text" name="name" data-constraints="@Required">
+            <span class="form-validation"></span>
+          </div>
+          <div class="form-group postfix-xl-right-40">
+            <label class="form-label rd-input-label" for="contact-email">E-mail *</label>
+            <input class="form-control form-control-has-validation form-control-last-child" formControlName="email" id="contact-email"
+              type="email" name="email" data-constraints="@Email @Required">
+            <span class="form-validation"></span>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 offset-top-20 offset-md-top-0">
+          <div class="form-group postfix-xl-right-40">
+            <label class="form-label rd-input-label" for="contact-company">Company *</label>
+            <input class="form-control form-control-has-validation form-control-last-child" formControlName="company" id="contact-company"
+              type="text" name="company" data-constraints="@Required">
+            <span class="form-validation"></span>
+          </div>
+          <div class="form-group postfix-xl-right-40">
+            <label class="form-label rd-input-label" for="contact-subject">Subject *</label>
+            <input class="form-control form-control-has-validation form-control-last-child" formControlName="subject" id="contact-subject"
+              type="text" name="subject" data-constraints="@Required">
+            <span class="form-validation"></span>
+          </div>
+        </div>
+        <div class="col-xl-4 offset-top-20 offset-lg-top-0">
+          <div class="form-group postfix-xl-right-40">
+            <label class="form-label rd-input-label" for="contact-message">Message *</label>
+            <textarea class="form-control form-control-has-validation form-control-last-child" formControlName="message" id="contact-message"
+              name="message" data-constraints="@Required"></textarea>
+            <span class="form-validation"></span>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="btn btn-form btn-primary" type="submit">Send message</button> -->
+      <button class="btn btn-form btn-primary" (click)="addNewContact(formContact.value)">Send message</button>
+    </form>
+  </div>
+</section>
+<!-- 
+<section class="section-50 section-md-75 section-md-130">
+  <div class="shell container">
+    <div class="row">
+      <div class="col-xl-8 col-xxl-6">
+        <h2>Stay tuned and subscribe to our newsletter</h2>
+        <form [formGroup]="formSub" class="rd-mailform text-left rd-mailform-subscribe" data-form-output="form-output-global" data-form-type="subscribe">
+          <div class="form-group">
+            <label class="form-label" for="footer-subscribel-email">Enter your e-mail</label>
+            <input class="form-control form-control-has-validation form-control-last-child" id="footer-subscribel-email" formControlName="email"
+              type="email" name="email" data-constraints="@Email @Required">
+          </div>
+          <button class="btn btn-primary" (click)="subscriberNew(formSub.value)">subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section> -->
