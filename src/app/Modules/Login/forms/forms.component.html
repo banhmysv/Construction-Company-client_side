@@ -34,7 +34,7 @@
             <label class="form-label" for="contact-phone-login">Password *</label>
             <input class="form-control" formControlName="password" id="contact-phone-login" type="password" name="password" data-constraints="@Required">
           </div>
-          <button class="btn btn-primary offset-top-35" (click)="loginSystem(formLogin.value)">Sign in</button>
+          <button class="btn btn-primary offset-top-35" (click)="loginSystem(formLogin.value) "  routerLink="/admin" routerLinkActive="active">Sign in</button>
         </form>
       </div>
     </div>

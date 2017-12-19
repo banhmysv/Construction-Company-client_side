@@ -1,0 +1,115 @@
+<!-- Classic Breadcrumbs-->
+
+<section class="section-50 section-md-75 section-md-100 section-lg-120 section-xl-150">
+  <div class="shell container">
+    <h1>Manager project</h1>
+    <p style="max-width: 735px;">Tables have always been perfect for displaying facts and numbers. Now you can benefit from using them on your website.</p>
+    <div class="row offset-top-40 offset-md-top-50">
+      <div class="col-xxl-12">
+        <!-- <h2>Hover Row Table</h2> -->
+        <button class="btn2 btn-primary" data-toggle="modal" data-target="#myModal">Add New</button>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Value</th>
+                <th>ResponsibleDepartment</th>
+                <th>date-From</th>
+                <th>Date-To</th>
+                <!-- <th>Description</th> -->
+              </tr>
+            </thead>
+            <tbody *ngIf="listProject">
+              <tr *ngFor="let pro of listProject | paginate: {itemsPerPage: 5, currentPage:page, id: '1'}; let i = index">
+                <th>{{i+1}}</th>
+                <!-- <td>{{pro.id}}</td> -->
+                <td (click)="clickPut(pro)" data-toggle="modal" data-target="#myModal2">{{pro.name}}</td>
+                <td (click)="clickPut(pro)" data-toggle="modal" data-target="#myModal2">{{pro.value}}</td>
+                <td (click)="clickPut(pro)" data-toggle="modal" data-target="#myModal2">{{pro.responsibleDepartment.id}}</td>
+                <td (click)="clickPut(pro)" data-toggle="modal" data-target="#myModal2">{{pro.datefrom}}</td>
+                <td (click)="clickPut(pro)" data-toggle="modal" data-target="#myModal2">{{pro.dateto}}</td>
+                <!-- <td (click)="clickPut(pro)" data-toggle="modal" data-target="#myModal">{{pro.description}}</td> -->
+
+                <!-- <td>
+                  <button class="btn2 btn-warning" (click)="clickPut(con)" data-toggle="modal" data-target="#myModal">Get</button>
+                </td> -->
+                <td>
+                  <button class="btnDel btn-danger" (click)="deleteProject(pro.id)">Del</button>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <pagination-controls (pageChange)="page = $event" id="1" maxSize="50" directionLinks="true" autoHide="true">
+          </pagination-controls>
+        </div>
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" style="color: black">Get project Detail</h4>
+                <button type="button" class="close btn" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body" *ngIf="!project">
+                <input type="text" placeholder="aaaaaaa aaaaa">
+                <!-- <form class="" [formGroup]="formProject">
+                      Name:
+                      <div class="form-group">
+                        <input type="text" class="form-control" formControlName="" placeholder="aaaa">
+                      </div>
+                      <input type="text" placeholder="aaaaaaaas">
+                      <button class="btn2 btn-success" (click)="addNewProject()" data-dismiss="modal">Add Project</button>
+                  </form> -->x
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn2 btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="myModal2" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" style="color: black">Get project Detail</h4>
+                <button type="button" class="close btn" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body" *ngIf="project">
+                id:
+                <div>
+                  {{project.id}}
+                </div>
+                Name:
+                <div>{{project.name}}</div>
+                Value:
+                <div>{{project.value}}</div>
+                Responsible Department:
+                <div>
+                  <a>{{project.responsibleDepartment}}</a>
+                </div>
+                Date-From:
+                <div>{{project.datefrom}}</div>
+                Date-To:
+                <div>{{project.dateto}}</div>
+                Description:
+                <div>{{project.description}}</div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn2 btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>

@@ -1,88 +1,416 @@
-<main class="page-content">
-  <!-- Classic Breadcrumbs-->
-  <section class="breadcrumb-classic">
-    <div class="rd-parallax">
-      <div class="rd-parallax-layer" data-speed="0.25" data-type="media" data-url="images/breadcrumbs-parallax-01.jpg"></div>
-      <div class="rd-parallax-layer section-top-75 section-md-top-150 section-lg-top-260" data-speed="0" data-type="html">
-        <div class="shell container">
-          <ul class="list-breadcrumb">
-            <li><a href="index.html">home</a></li>
-            <li><a href="about.html">about us</a></li>
-            <li>Team member profile
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section-75 section-md-100 section-lg-150">
-    <div class="shell container team-member">
-      <div class="row justify-content-md-center">
-        <div class="col-lg-8 col-xl-12 col-md-10">
-          <div class="row">
-            <div class="col-xl-5"><img class="img-responsive" src="assets/images/team-member-01-610x741.jpg" alt="" width="610" height="741"/>
-            </div>
-            <div class="offset-xl-1 col-xl-6 col-xxl-5">
-              <h1>Paul Eddington</h1>
-              <h6>Engineer</h6>
-              <p>Paul is a civil and environmental engineer with consulting engineering and construction management experience of 15 years. His areas of focus include pumps, pipeline hydraulics, open channel hydraulics, liquids process design and solids process design for produced and flowback water.</p>
-              <h5 class="team-member-quote">“ I’m glad to be a part of America’s leading construction company, which delivers the most innovative solutions.”</h5>
-              <p>Paul is really passionate about integrating high-quality engineering solutions in all projects of ArchiTex.</p>
-              <div class="unit unit-sm-horizontal unit-middle unit-spacing-lg unit-align-center unit-md-align-left">
-                <div class="unit-left"><a class="btn btn-primary btn-form" href="#">Contact Paul</a></div>
-                <div class="unit-body">
-                  <ul class="list-inline-lg">
-                    <li><a class="icon icon-sm text-primary fa-facebook" href="#"></a></li>
-                    <li><a class="icon icon-sm text-primary fa-twitter" href="#"></a></li>
-                    <li><a class="icon icon-sm text-primary fa-instagram" href="#"></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section-75 section-sm-80 section-md-120 section-xl-130 bg-gray-darker bg-gray-darker-custom-left">
-    <div class="shell container">
-      <h2>Check out Paul’s projects</h2>
-      <div class="row">
-        <div class="col-lg-4 col-md-6"><img class="img-responsive" src="assets/images/team-member-02-485x555.jpg" alt="" width="485" height="555"/>
-          <h6><a class="text-white" href="project-single.html">Residential House at Southward St.</a></h6>
-          <p><a class="text-content" href="#">Building</a><span>,</span>	<a class="text-content" href="#">House</a>
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-6 offset-top-40 offset-sm-top-0"><img class="img-responsive" src="assets/images/team-member-03-485x555.jpg" alt="" width="485" height="555"/>
-          <h6><a class="text-white" href="project-single.html">Eastwood Hotel</a></h6>
-          <p><a class="text-content" href="#">Building</a><span>,</span>	<a class="text-content" href="#">Hotel</a>
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-6 offset-top-40 offset-md-top-0"><img class="img-responsive" src="assets/images/team-member-04-485x555.jpg" alt="" width="485" height="555"/>
-          <h6><a class="text-white" href="project-single.html">California Mega Mall</a></h6>
-          <p><a class="text-content" href="#">Building</a><span>,</span>	<a class="text-content" href="#">Mall</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section-75 section-sm-80 section-md-120 section-xl-130">
-    <div class="shell container">
-      <h2>Certifications</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <figure class="thumbnail-default"><a data-photo-swipe-item="" data-size="996x749" href="images/team-member-04-original-996x749.jpg"><img class="img-responsive" src="assets/images/team-member-04-290x218.jpg" alt="" width="290" height="218"/></a></figure>
-        </div>
-        <div class="col-md-3">
-          <figure class="thumbnail-default"><a data-photo-swipe-item="" data-size="996x749" href="images/team-member-04-original-996x749.jpg"><img class="img-responsive" src="assets/images/team-member-04-290x218.jpg" alt="" width="290" height="218"/></a></figure>
-        </div>
-        <div class="col-md-3">
-          <figure class="thumbnail-default"><a data-photo-swipe-item="" data-size="996x749" href="images/team-member-04-original-996x749.jpg"><img class="img-responsive" src="assets/images/team-member-04-290x218.jpg" alt="" width="290" height="218"/></a></figure>
-        </div>
-        <div class="col-md-3">
-          <figure class="thumbnail-default"><a data-photo-swipe-item="" data-size="996x749" href="images/team-member-04-original-996x749.jpg"><img class="img-responsive" src="assets/images/team-member-04-290x218.jpg" alt="" width="290" height="218"/></a></figure>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
+<style type="text/css">
+  * {
+    box-sizing: border-box;
+  }
+
+  .glitch {
+    position: relative;
+    animation: glitch 2s steps(100) infinite
+  }
+
+  @keyframes glitch {
+    0% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    1% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    2% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    3% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    4% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    5% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    6% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    7% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    8% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    9% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    10% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    11% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    12% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    13% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    14% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    15% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    16% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    17% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    18% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    19% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    20% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    21% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    22% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    23% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    24% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    25% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    26% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    27% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    28% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    29% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    30% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    31% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    32% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    33% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    34% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    35% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    36% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    37% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    38% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    39% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    40% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    41% {
+      text-shadow: 50px 0 0 blue, -50px 0 0 lime
+    }
+    42% {
+      text-shadow: 0 0 0 blue, 0 0 0 lime
+    }
+    43% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    44% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    45% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    46% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    47% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    48% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    49% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    50% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    51% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    52% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    53% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    54% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    55% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    56% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    57% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    58% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    59% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    60% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    61% {
+      text-shadow: 30px 0 0 red, -30px 0 0 lime
+    }
+    62% {
+      text-shadow: 0 0 0 red, 0 0 0 lime
+    }
+    63% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue
+    }
+    64% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue
+    }
+    65% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue
+    }
+    66% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue
+    }
+    67% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    68% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    69% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    70% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    71% {
+      text-shadow: 70px 0 0 red, -70px 0 0 blue
+    }
+    72% {
+      text-shadow: 0 0 0 red, 0 0 0 blue
+    }
+    73% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    74% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    75% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    76% {
+      text-shadow: 1px 0 0 red, -1px 0 0 blue
+    }
+    77% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    78% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    79% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    80% {
+      text-shadow: -1px 0 0 red, 1px 0 0 blue
+    }
+    81% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    82% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    83% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    84% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    85% {
+      text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime
+    }
+    86% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    87% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    88% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    89% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    90% {
+      text-shadow: -1px 0 0 red, 1px 0 0 lime
+    }
+    91% {
+      text-shadow: 60px 0 0 lime, -60px 0 0 blue
+    }
+    92% {
+      text-shadow: 0 0 0 lime, 0 0 0 blue
+    }
+    92% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    93% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    94% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    95% {
+      text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime
+    }
+    96% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    97% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    98% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    99% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+    100% {
+      text-shadow: -1px 0 0 blue, 1px 0 0 lime
+    }
+  }
+
+  .go-home {
+    text-align: center
+  }
+
+  .video-background {
+    /* background: #000; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
+  }
+
+  .video-foreground,
+  .video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  #vidtop-content {
+    top: 0;
+    color: #fff;
+  }
+
+  .vid-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33%;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 1rem;
+    font-family: Avenir, Helvetica, sans-serif;
+  }
+
+  .vid-info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+    line-height: 1.2;
+  }
+
+  .vid-info a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    transition: .6s background;
+    border-bottom: none;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  @media (min-aspect-ratio: 16/9) {
+    .video-foreground {
+      height: 300%;
+      top: -100%;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    .video-foreground {
+      width: 300%;
+      left: -100%;
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    .vid-info {
+      width: 50%;
+      padding: .5rem;
+    }
+    .vid-info h1 {
+      margin-bottom: .2rem;
+    }
+  }
+
+  @media all and (max-width: 500px) {
+    .vid-info .acronym {
+      display: none;
+    }
+  }
+</style>
+<div class="video-background">
+  <div class="video-foreground">
+    <iframe src="https://www.youtube.com/embed/e3GlLOcM_gc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=MhQKe-aERsU"
+      frameborder="0" allowfullscreen></iframe>
+    <!--<iframe src="https://www.youtube.com/embed/MhQKe-aERsU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=MhQKe-aERsU" frameborder="0" allowfullscreen></iframe>-->
+    <!--https://www.youtube.com/embed/hf02G56dML0?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=hf02G56dML0-->
+  </div>
+</div>
+<script> document.getElementsByTagName('body')[0].classList.add('glitch'); </script>

@@ -20,7 +20,14 @@ export class FormsComponent implements OnInit {
   constructor(private _contactService: ContactService, private _accountService: AccountService,
     private _fb: FormBuilder, private _subService: SubscriberService) {
   }
+  public loadScript(url) {
+    console.log('preparing to load...');
+    const node = document.createElement('script');
+    node.src = url;
+    node.type = 'text/javascript';
+    document.getElementsByTagName('div')[0].appendChild(node);
 
+  }
 
   private createForm() {
     this.formContact = this._fb.group({
@@ -85,6 +92,9 @@ export class FormsComponent implements OnInit {
   }
 
   ngOnInit() {
+    // this.loadScript('assets/js/core.min.js');
+    // this.loadScript('assets/js/script.js');
+    // this.loadScript('assets/js/core.min.js');
     this.createForm();
     // this.loadAllContact();
   }

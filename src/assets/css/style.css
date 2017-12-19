@@ -2927,7 +2927,7 @@ h1.text-primary a:hover, h2.text-primary a:hover, h3.text-primary a:hover, h4.te
 }
       
 @media (min-width: 969px) {
-  .btnClose {
+  .btn2 {
    padding: 15px 20px;
    font-size: 15px;
    line-height: 1;

@@ -1,0 +1,84 @@
+<!-- Classic Breadcrumbs-->
+
+<section class="section-50 section-md-75 section-md-100 section-lg-120 section-xl-150">
+  <div class="shell container">
+    <h1>Manager Contact</h1>
+    <p style="max-width: 735px;">Tables have always been perfect for displaying facts and numbers. Now you can benefit from using them on your website.</p>
+    <div class="row offset-top-40 offset-md-top-50">
+      <div class="col-xxl-12">
+        <!-- <h2>Hover Row Table</h2> -->
+        <p class="offset-top-10">4 different sizes: large, default, middle and small</p>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>E-mail</th>
+                <th>Subject</th>
+                <th>Message</th>
+              </tr>
+            </thead>
+            <tbody *ngIf="listContact">
+              <tr *ngFor="let con of listContact | paginate: {itemsPerPage: 5, currentPage:page, id: '1'}; let i = index">
+                <th>{{i+1}}</th>
+                <!-- <td>{{con.id}}</td> -->
+                <td (click)="clickPut(con)" data-toggle="modal" data-target="#myModal">{{con.name}}</td>
+                <td (click)="clickPut(con)" data-toggle="modal" data-target="#myModal">{{con.company}}</td>
+                <td (click)="clickPut(con)" data-toggle="modal" data-target="#myModal">{{con.email}}</td>
+                <td (click)="clickPut(con)" data-toggle="modal" data-target="#myModal">{{con.subject}}</td>
+                <td (click)="clickPut(con)" data-toggle="modal" data-target="#myModal">{{con.message}}</td>
+                <!-- <td>
+                  <button class="btn2 btn-warning" (click)="clickPut(con)" data-toggle="modal" data-target="#myModal">Get</button>
+                </td> -->
+                <td>
+                  <button class="btnDel btn-danger" (click)="deleteContac(con.id)">Del</button>
+                </td>
+
+              </tr>
+            </tbody>
+
+          </table>
+          <pagination-controls (pageChange)="page = $event" id="1" maxSize="50" directionLinks="true" autoHide="true">
+          </pagination-controls>
+        </div>
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" style="color: black">Get Contact Detail</h4>
+                <button type="button" class="close btn" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body" *ngIf="contact">
+                id:
+                <div>
+                  {{contact.id}}
+                </div>
+                Name:
+                <div>{{contact.name}}</div>
+                Company:
+                <div>{{contact.company}}</div>
+                E-mail:
+                <div>
+                  <a href="mailto:#">{{contact.email}}</a>
+                </div>
+                Subject:
+                <div>{{contact.subject}}</div>
+                Message:
+                <div>{{contact.message}}</div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn2 btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
